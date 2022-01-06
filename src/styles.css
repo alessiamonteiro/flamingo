@@ -1,0 +1,55 @@
+HTML CSSResult Skip Results Iframe EDIT ON body {
+  font: 150%/1.5 Arial;
+  text-align: center;
+  margin-top: 6em;
+}
+body {
+  background-color: #87cefa;
+}
+
+#flamingo {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+h1 {
+  animation: bounce 1s alternate infinite ease-in;
+}
+
+@media screen and (min-width: 701px) {
+  @keyframes bounce {
+    0% {
+      transform: translateY(50%);
+    }
+    0% {
+      transform: translateY(50%);
+    }
+  }
+
+  h1 {
+    display: inline-block; /*needed to trigger update */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @keyframes bounce {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(50);
+    }
+  }
+
+  h1 {
+    display: block; /* needed to trigger update */
+  }
+}
